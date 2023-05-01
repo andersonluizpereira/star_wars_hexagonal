@@ -8,7 +8,7 @@ public class People {
         this.isActivePeople = false;
     }
 
-    public People(String name, Integer height, Integer mass, String hair_color, String skin_color, String eye_color, String birth_year, String gender, String homeworld, List<String> films, List<String> species, List<String> vehicles, List<String> starships, String created, String edited, String url, Boolean isActivePeople) {
+    public People(String name, Integer height, Integer mass, String hair_color, String skin_color, String eye_color, String birth_year, String gender, String homeworld, List<String> films, List<String> species, List<String> vehicles, List<String> starships, String created, String edited, String url, Boolean isActivePeople, Planet planet) {
         this.name = name;
         this.height = height;
         this.mass = mass;
@@ -26,7 +26,9 @@ public class People {
         this.edited = edited;
         this.url = url;
         this.isActivePeople = isActivePeople;
+        this.planet = planet;
     }
+
     private String name;
     private Integer height;
     private Integer mass;
@@ -44,6 +46,16 @@ public class People {
     private String edited;
     private String url;
     private Boolean isActivePeople;
+
+    private Planet planet;
+
+    public Planet getPlanet() {
+        return planet;
+    }
+
+    public void setPlanet(Planet planet) {
+        this.planet = planet;
+    }
 
     public String getName() {
         return name;
