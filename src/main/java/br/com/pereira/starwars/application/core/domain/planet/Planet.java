@@ -1,4 +1,4 @@
-package br.com.pereira.starwars.application.core.domain;
+package br.com.pereira.starwars.application.core.domain.planet;
 
 import java.util.List;
 

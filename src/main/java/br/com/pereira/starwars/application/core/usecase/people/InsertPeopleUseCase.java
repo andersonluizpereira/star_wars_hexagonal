@@ -1,9 +1,9 @@
 package br.com.pereira.starwars.application.core.usecase.people;
 
-import br.com.pereira.starwars.application.core.domain.People;
+import br.com.pereira.starwars.application.core.domain.people.People;
 import br.com.pereira.starwars.application.ports.in.people.InsertPeopleInputPort;
-import br.com.pereira.starwars.application.ports.out.FindPlanetByIdOutputPort;
-import br.com.pereira.starwars.application.ports.out.InsertPeopleOutputPort;
+import br.com.pereira.starwars.application.ports.out.planet.FindPlanetByIdOutputPort;
+import br.com.pereira.starwars.application.ports.out.people.InsertPeopleOutputPort;
 import br.com.pereira.starwars.application.ports.out.SendIdForValidationOutputPort;
 
 public class InsertPeopleUseCase implements InsertPeopleInputPort {
