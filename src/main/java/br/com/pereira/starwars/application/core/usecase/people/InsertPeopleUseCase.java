@@ -29,7 +29,8 @@ public class InsertPeopleUseCase implements InsertPeopleInputPort {
         var planet = findPlanetByIdOutputPort.find(planetId);
         people.setPlanet(planet);
         insertPeopleOutputPort.insert(people);
-        sendIdForValidationOutputPort.send(peopleId, planetId);
+        sendIdForValidationOutputPort.send(peopleId, "tp-people-validation");
+        sendIdForValidationOutputPort.send(planetId, "tp-planet-validation");
     }
 
 }
